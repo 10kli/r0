@@ -1,0 +1,12 @@
+
+{% block title %}форма{% endblock %}
+ 
+{% block content %}
+    <h2>форма</h2>
+    <form method="post" class="order-form">
+        {{ order_form.as_p }}
+        <p><input type="submit" value="Place order"></p>
+        {% csrf_token %}
+      </form>
+    
+{% endblock %} 
